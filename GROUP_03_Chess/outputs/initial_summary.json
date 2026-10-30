@@ -1,0 +1,89 @@
+{
+  "raw_rows": 153817,
+  "prepared_games": 86950,
+  "player_perspectives": 173900,
+  "unique_players": 70742,
+  "speed_counts": {
+    "blitz": 64824,
+    "rapid": 22126
+  },
+  "month_counts": {
+    "2026-07": 30615,
+    "2026-08": 25782,
+    "2026-09": 30553
+  },
+  "white_score_pct": 51.31167337550316,
+  "draw_pct": 4.417481311098332,
+  "balanced_white_score_pct": 51.516758447209185,
+  "balanced_games": 73545,
+  "opening_families": 140,
+  "most_common_family": "Sicilian Defense",
+  "most_common_family_games": 9255,
+  "unclassified_games": 0,
+  "postgame_family_differs_from_prefix": 311,
+  "rating_min": 400,
+  "rating_max": 3066,
+  "prepared_fingerprint": "a64532cce7bc8dab4ccdc89d96f70c6b6890b7f3d95b122ea362d91db7cd0796",
+  "preparation_log": [
+    {
+      "rule": "One source record per game ID; exact/conflicting duplicates audited separately",
+      "before": 153817,
+      "after": 153817,
+      "excluded": 0
+    },
+    {
+      "rule": "Scope: rated standard blitz and rapid records",
+      "before": 153817,
+      "after": 91068,
+      "excluded": 62749
+    },
+    {
+      "rule": "Valid UTC date and time",
+      "before": 91068,
+      "after": 91068,
+      "excluded": 0
+    },
+    {
+      "rule": "Observed completed result",
+      "before": 91068,
+      "after": 91068,
+      "excluded": 0
+    },
+    {
+      "rule": "Present ratings within broad plausibility interval 1-4000",
+      "before": 91068,
+      "after": 91068,
+      "excluded": 0
+    },
+    {
+      "rule": "Nonmissing game/player IDs; distinct opponents",
+      "before": 91068,
+      "after": 91068,
+      "excluded": 0
+    },
+    {
+      "rule": "Valid clock syntax and official Lichess speed boundaries",
+      "before": 91068,
+      "after": 91068,
+      "excluded": 0
+    },
+    {
+      "rule": "Reached 20 observed plies; shorter games remain in exclusion accounting",
+      "before": 91068,
+      "after": 86997,
+      "excluded": 4071
+    },
+    {
+      "rule": "Legal prefix with nonterminal board after Black's 10th move",
+      "before": 86997,
+      "after": 86950,
+      "excluded": 47
+    }
+  ],
+  "reference_audit": {
+    "reference_rows": 3865,
+    "distinct_named_positions": 3865,
+    "position_name_ties": 0,
+    "tie_rule": "lexicographic (name, ECO), outcome-independent"
+  }
+}

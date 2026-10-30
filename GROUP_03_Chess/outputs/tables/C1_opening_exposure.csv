@@ -1,0 +1,273 @@
+speed,opening_family_20,games,share_pct
+blitz,Alekhine Defense,544,0.839195359743305
+blitz,Amar Opening,26,0.04010860175243737
+blitz,Amazon Attack,21,0.032395409107737874
+blitz,Anderssen's Opening,53,0.08175984203381463
+blitz,Barnes Defense,21,0.032395409107737874
+blitz,Barnes Opening,63,0.09718622732321362
+blitz,Basque Opening,3,0.004627915586819697
+blitz,Benko Gambit,25,0.03856596322349747
+blitz,Benko Gambit Accepted,19,0.02931013204985808
+blitz,Benko Gambit Declined,4,0.0061705541157595955
+blitz,Benoni Defense,777,1.1986301369863013
+blitz,Bird Opening,638,0.9842033814636555
+blitz,Bishop's Opening,1175,1.8126002715043812
+blitz,Blackmar-Diemer Gambit,153,0.2360236949278045
+blitz,Blackmar-Diemer Gambit Accepted,58,0.08947303467851413
+blitz,Blackmar-Diemer Gambit Declined,31,0.047821794397136866
+blitz,Blumenfeld Countergambit,4,0.0061705541157595955
+blitz,Bogo-Indian Defense,22,0.03393804763667777
+blitz,Bongcloud Attack,3,0.004627915586819697
+blitz,Borg Defense,63,0.09718622732321362
+blitz,Canard Opening,26,0.04010860175243737
+blitz,Caro-Kann Defense,3875,5.977724299642108
+blitz,Carr Defense,27,0.04165124028137727
+blitz,Catalan Opening,97,0.14963593730717017
+blitz,Center Game,426,0.6571640133283969
+blitz,Center Game Accepted,9,0.013883746760459089
+blitz,Clemenz Opening,49,0.07558928791805504
+blitz,Creepy Crawly Formation,9,0.013883746760459089
+blitz,Czech Defense,51,0.07867456497593484
+blitz,Danish Gambit,46,0.07096137233123534
+blitz,Danish Gambit Accepted,131,0.20208564729112674
+blitz,Danish Gambit Declined,13,0.020054300876218685
+blitz,Duras Gambit,59,0.09101567320745403
+blitz,Dutch Defense,418,0.6448229050968777
+blitz,Döry Defense,1,0.0015426385289398989
+blitz,East Indian Defense,67,0.10335678143897321
+blitz,Elephant Gambit,209,0.32241145254843884
+blitz,English Defense,343,0.5291250154263852
+blitz,English Opening,2040,3.1469825990373934
+blitz,English Orangutan,4,0.0061705541157595955
+blitz,Englund Gambit,718,1.1076144637788474
+blitz,Englund Gambit Declined,274,0.4226829569295323
+blitz,Four Knights Game,802,1.2371961002097989
+blitz,French Defense,4071,6.280081451314328
+blitz,"French Defense, Classical, 4. Bg5",2,0.0030852770578797977
+blitz,Fried Fox Defense,4,0.0061705541157595955
+blitz,Global Opening,6,0.009255831173639394
+blitz,Goldsmith Defense,42,0.06479081821547575
+blitz,Grob Opening,165,0.2545353572750833
+blitz,Grünfeld Defense,127,0.19591509317536715
+blitz,Gunderam Defense,30,0.04627915586819696
+blitz,Hippopotamus Defense,6,0.009255831173639394
+blitz,Horwitz Defense,862,1.3297544119461928
+blitz,Hungarian Opening,780,1.2032580525731211
+blitz,Indian Defense,1380,2.1288411699370604
+blitz,Irish Gambit,1,0.0015426385289398989
+blitz,Italian Game,2756,4.251511785758361
+blitz,Kangaroo Defense,14,0.021596939405158583
+blitz,King's Gambit,140,0.21596939405158583
+blitz,King's Gambit Accepted,480,0.7404664938911514
+blitz,King's Gambit Declined,357,0.5507219548315438
+blitz,King's Indian Attack,215,0.33166728372207827
+blitz,"King's Indian Attack, with Bf5",12,0.018511662347278787
+blitz,"King's Indian Attack, with e6",33,0.05090707145501666
+blitz,King's Indian Defense,592,0.91324200913242
+blitz,King's Knight Opening,214,0.33012464519313833
+blitz,King's Pawn Game,1869,2.8831914105886707
+blitz,King's Pawn Opening,21,0.032395409107737874
+blitz,Kádas Opening,80,0.1234110823151919
+blitz,Lasker Simul Special,9,0.013883746760459089
+blitz,Latvian Gambit,57,0.08793039614957424
+blitz,Latvian Gambit Accepted,38,0.05862026409971616
+blitz,Lemming Defense,8,0.012341108231519191
+blitz,Lion Defense,41,0.06324817968653586
+blitz,London System,108,0.16660496112550907
+blitz,"London System, with Bd3",28,0.043193878810317166
+blitz,"London System, with Be2",27,0.04165124028137727
+blitz,Mexican Defense,14,0.021596939405158583
+blitz,Mieses Opening,355,0.5476366777736641
+blitz,Mikenas Defense,109,0.16814759965444898
+blitz,Modern Defense,1320,2.0362828582006665
+blitz,Montevideo Defense,2,0.0030852770578797977
+blitz,Neo-Grünfeld Defense,32,0.049364432926076764
+blitz,Nimzo-Indian Defense,189,0.29155868196964085
+blitz,Nimzo-Larsen Attack,774,1.1940022213994816
+blitz,Nimzowitsch Defense,755,1.1646920893496235
+blitz,Old Indian Defense,175,0.2699617425644823
+blitz,Owen Defense,777,1.1986301369863013
+blitz,Paleface Attack,24,0.037023324694557574
+blitz,Petrov's Defense,828,1.277304701962236
+blitz,Philidor Defense,1519,2.343267925459706
+blitz,Pirc Defense,1289,1.9884610638035296
+blitz,Polish Defense,30,0.04627915586819696
+blitz,Polish Opening,217,0.334752560779958
+blitz,"Polish Opening, with d5",53,0.08175984203381463
+blitz,Ponziani Opening,239,0.3686906084166358
+blitz,Portuguese Opening,25,0.03856596322349747
+blitz,Pseudo Queen's Indian Defense,17,0.02622485499197828
+blitz,Pterodactyl Defense,23,0.03548068616561767
+blitz,Queen's Gambit,29,0.04473651733925706
+blitz,Queen's Gambit Accepted,514,0.792916203875108
+blitz,Queen's Gambit Declined,1750,2.699617425644823
+blitz,Queen's Indian Accelerated,12,0.018511662347278787
+blitz,Queen's Indian Defense,58,0.08947303467851413
+blitz,Queen's Pawn Game,6584,10.156732074540294
+blitz,Rapport-Jobava System,279,0.4303961495742318
+blitz,"Rapport-Jobava System, with e6",92,0.14192274466247068
+blitz,Rat Defense,312,0.48130322102924844
+blitz,Richter-Veresov Attack,40,0.06170554115759595
+blitz,Robatsch Defense,3,0.004627915586819697
+blitz,Rubinstein Opening,11,0.016969023818338886
+blitz,Ruy Lopez,1314,2.027027027027027
+blitz,Réti Opening,94,0.1450080217203505
+blitz,Saragossa Opening,137,0.21134147846476614
+blitz,Scandinavian Defense,3350,5.167839071948661
+blitz,Scotch Game,1293,1.9946316179192891
+blitz,Semi-Slav Defense,282,0.43502406516105147
+blitz,Semi-Slav Defense Accepted,2,0.0030852770578797977
+blitz,Sicilian Defense,7164,11.051462421325436
+blitz,Slav Defense,695,1.0721337776132296
+blitz,Slav Indian,20,0.030852770578797976
+blitz,Sodium Attack,9,0.013883746760459089
+blitz,St. George Defense,98,0.15117857583611008
+blitz,Tarrasch Defense,42,0.06479081821547575
+blitz,Three Knights Opening,357,0.5507219548315438
+blitz,Torre Attack,53,0.08175984203381463
+blitz,Trompowsky Attack,146,0.22522522522522523
+blitz,Valencia Opening,4,0.0061705541157595955
+blitz,Van Geet Opening,171,0.2637911884487227
+blitz,Van't Kruijs Opening,860,1.326669134888313
+blitz,"Vienna Gambit, with Max Lange Defense",59,0.09101567320745403
+blitz,Vienna Game,797,1.2294829075650993
+blitz,Vulture Defense,3,0.004627915586819697
+blitz,Wade Defense,11,0.016969023818338886
+blitz,Ware Defense,35,0.05399234851289646
+blitz,Ware Opening,50,0.07713192644699494
+blitz,Yusupov-Rubinstein System,39,0.060162902628656055
+blitz,Zukertort Defense,2,0.0030852770578797977
+blitz,Zukertort Opening,1315,2.028569665555967
+rapid,Alekhine Defense,180,0.8135225526529875
+rapid,Amar Opening,6,0.027117418421766248
+rapid,Amazon Attack,14,0.06327397631745457
+rapid,Anderssen's Opening,20,0.09039139473922082
+rapid,Australian Defense,4,0.018078278947844164
+rapid,Barnes Defense,10,0.04519569736961041
+rapid,Barnes Opening,16,0.07231311579137666
+rapid,Basque Opening,3,0.013558709210883124
+rapid,Benko Gambit,4,0.018078278947844164
+rapid,Benko Gambit Accepted,3,0.013558709210883124
+rapid,Benko Gambit Declined,1,0.004519569736961041
+rapid,Benoni Defense,159,0.7186115881768056
+rapid,Bird Opening,172,0.7773659947572991
+rapid,Bishop's Opening,532,2.404411100063274
+rapid,Blackmar-Diemer Gambit,57,0.25761547500677934
+rapid,Blackmar-Diemer Gambit Accepted,14,0.06327397631745457
+rapid,Blackmar-Diemer Gambit Declined,13,0.05875440658049354
+rapid,Bogo-Indian Defense,5,0.022597848684805206
+rapid,Bongcloud Attack,1,0.004519569736961041
+rapid,Borg Defense,31,0.1401066618457923
+rapid,Canard Opening,6,0.027117418421766248
+rapid,Caro-Kann Defense,1320,5.965832052788574
+rapid,Carr Defense,11,0.049715267106571454
+rapid,Catalan Opening,24,0.10846967368706499
+rapid,Center Game,163,0.7366898671246498
+rapid,Center Game Accepted,3,0.013558709210883124
+rapid,Clemenz Opening,15,0.06779354605441562
+rapid,Creepy Crawly Formation,1,0.004519569736961041
+rapid,Czech Defense,17,0.0768326855283377
+rapid,Danish Gambit,9,0.04067612763264937
+rapid,Danish Gambit Accepted,43,0.19434149868932477
+rapid,Danish Gambit Declined,5,0.022597848684805206
+rapid,Duras Gambit,11,0.049715267106571454
+rapid,Dutch Defense,99,0.4474374039591431
+rapid,Döry Defense,2,0.009039139473922082
+rapid,East Indian Defense,24,0.10846967368706499
+rapid,Elephant Gambit,71,0.3208894513242339
+rapid,English Defense,74,0.33444816053511706
+rapid,English Opening,604,2.729820121124469
+rapid,Englund Gambit,222,1.0033444816053512
+rapid,Englund Gambit Declined,88,0.39772213685257163
+rapid,Four Knights Game,470,2.1241977763716893
+rapid,French Defense,1151,5.2020247672421585
+rapid,"French Defense, Classical, 4. Bg5",2,0.009039139473922082
+rapid,Global Opening,1,0.004519569736961041
+rapid,Goldsmith Defense,13,0.05875440658049354
+rapid,Grob Opening,63,0.2847328934285456
+rapid,Grünfeld Defense,22,0.09943053421314291
+rapid,Gunderam Defense,15,0.06779354605441562
+rapid,Hippopotamus Defense,3,0.013558709210883124
+rapid,Horwitz Defense,221,0.9988249118683902
+rapid,Hungarian Opening,172,0.7773659947572991
+rapid,Indian Defense,435,1.966012835578053
+rapid,Irish Gambit,4,0.018078278947844164
+rapid,Italian Game,1482,6.698002350176263
+rapid,King's Gambit,46,0.2079002079002079
+rapid,King's Gambit Accepted,184,0.8316008316008316
+rapid,King's Gambit Declined,103,0.46551568290698725
+rapid,King's Indian Attack,49,0.22145891711109103
+rapid,"King's Indian Attack, with Bf5",1,0.004519569736961041
+rapid,"King's Indian Attack, with e6",6,0.027117418421766248
+rapid,King's Indian Defense,134,0.6056223447527795
+rapid,King's Knight Opening,133,0.6011027750158185
+rapid,King's Pawn Game,889,4.0178974961583656
+rapid,King's Pawn Opening,10,0.04519569736961041
+rapid,Kádas Opening,29,0.1310675223718702
+rapid,Lasker Simul Special,1,0.004519569736961041
+rapid,Latvian Gambit,11,0.049715267106571454
+rapid,Latvian Gambit Accepted,9,0.04067612763264937
+rapid,Lemming Defense,4,0.018078278947844164
+rapid,Lion Defense,18,0.08135225526529874
+rapid,London System,43,0.19434149868932477
+rapid,"London System, with Bd3",9,0.04067612763264937
+rapid,"London System, with Be2",5,0.022597848684805206
+rapid,Mexican Defense,4,0.018078278947844164
+rapid,Mieses Opening,90,0.4067612763264937
+rapid,Mikenas Defense,72,0.32540902106119496
+rapid,Modern Defense,310,1.4010666184579228
+rapid,Montevideo Defense,2,0.009039139473922082
+rapid,Neo-Grünfeld Defense,6,0.027117418421766248
+rapid,Nimzo-Indian Defense,36,0.16270451053059748
+rapid,Nimzo-Larsen Attack,172,0.7773659947572991
+rapid,Nimzowitsch Defense,306,1.3829883395100786
+rapid,Old Indian Defense,49,0.22145891711109103
+rapid,Owen Defense,204,0.9219922263400524
+rapid,Paleface Attack,10,0.04519569736961041
+rapid,Petrov's Defense,416,1.8801410105757932
+rapid,Philidor Defense,630,2.847328934285456
+rapid,Pirc Defense,485,2.191991322426105
+rapid,Polish Defense,14,0.06327397631745457
+rapid,Polish Opening,81,0.36608514869384434
+rapid,"Polish Opening, with d5",10,0.04519569736961041
+rapid,Ponziani Opening,152,0.6869746000180783
+rapid,Portuguese Opening,15,0.06779354605441562
+rapid,Pseudo Queen's Indian Defense,4,0.018078278947844164
+rapid,Pterodactyl Defense,4,0.018078278947844164
+rapid,Queen's Gambit,11,0.049715267106571454
+rapid,Queen's Gambit Accepted,205,0.9265117960770135
+rapid,Queen's Gambit Declined,469,2.1196782066347284
+rapid,Queen's Indian Accelerated,3,0.013558709210883124
+rapid,Queen's Indian Defense,10,0.04519569736961041
+rapid,Queen's Pawn Game,2284,10.322697279219017
+rapid,Rapport-Jobava System,117,0.5287896592244419
+rapid,"Rapport-Jobava System, with e6",43,0.19434149868932477
+rapid,Rat Defense,106,0.4790743921178704
+rapid,Richter-Veresov Attack,17,0.0768326855283377
+rapid,Robatsch Defense,2,0.009039139473922082
+rapid,Rubinstein Opening,2,0.009039139473922082
+rapid,Ruy Lopez,545,2.4631655066437674
+rapid,Réti Opening,22,0.09943053421314291
+rapid,Saragossa Opening,32,0.1446262315827533
+rapid,Scandinavian Defense,1044,4.718430805387327
+rapid,Scotch Game,557,2.5174003434873
+rapid,Semi-Slav Defense,56,0.2530959052698183
+rapid,Sicilian Defense,2091,9.450420319985538
+rapid,Slav Defense,171,0.7728464250203381
+rapid,Slav Indian,4,0.018078278947844164
+rapid,Sodium Attack,6,0.027117418421766248
+rapid,St. George Defense,49,0.22145891711109103
+rapid,Tarrasch Defense,12,0.054234836843532495
+rapid,Three Knights Opening,168,0.759287715809455
+rapid,Torre Attack,15,0.06779354605441562
+rapid,Trompowsky Attack,25,0.11298924342402604
+rapid,Van Geet Opening,73,0.329928590798156
+rapid,Van't Kruijs Opening,300,1.3558709210883124
+rapid,"Vienna Gambit, with Max Lange Defense",13,0.05875440658049354
+rapid,Vienna Game,341,1.541173280303715
+rapid,Wade Defense,1,0.004519569736961041
+rapid,Ware Defense,29,0.1310675223718702
+rapid,Ware Opening,26,0.11750881316098707
+rapid,Yusupov-Rubinstein System,14,0.06327397631745457
+rapid,Zukertort Defense,1,0.004519569736961041
+rapid,Zukertort Opening,395,1.7852300460996113

@@ -1,0 +1,30 @@
+[
+  {
+    "workspace_relative_path": "C1_IIB423T-1_Brief_and_Rubric_Tomas_Fontecilla.pdf",
+    "sha256": "71f2e89091a7eb5d82163e32527c579ec747c6f87d2b51cce2b13219f49920ec"
+  },
+  {
+    "workspace_relative_path": "BI_Trimestral_Workshop_2_Student_Brief_and_Rubric.docx",
+    "sha256": "5b683d543633982e1507813c6c415a28ec5829b0ecddc5a4e26ceea06c236f57"
+  },
+  {
+    "workspace_relative_path": "Class/01_BI_Strategy_Measurement_Data_Loading.pdf",
+    "sha256": "df6adf3144b732fd4651c20a216401d494c087789fbe4a27f3c5341bddb51597"
+  },
+  {
+    "workspace_relative_path": "Class/02_Data_Quality_Cleaning_Imputation.pdf",
+    "sha256": "df26157514042a1fcd4d22ba38c96da07a5dffa0c63cf7cf15a0f986337609a4"
+  },
+  {
+    "workspace_relative_path": "Class/03_EDA_after_Data_Validation.pdf",
+    "sha256": "1022b7fdaf0dcc7a6feb0e06bb814f8c095e64d28acc7066d0666a2ac7917ea1"
+  },
+  {
+    "workspace_relative_path": "Class/Class_04_EDA_to_Supervised_Unsupervised_v2.ipynb",
+    "sha256": "87593768b79a742fb298c62fc0e6452eb1a9505f62b8fe0375911ee63221643d"
+  },
+  {
+    "workspace_relative_path": "Class/Calendarization_2026_Third_Term_Business_Intelligence_IIB423T.docx",
+    "sha256": "724c0a123f216849db223b2a55f380bda2ff594f9b2a06e44ab45c27618d5f52"
+  }
+]

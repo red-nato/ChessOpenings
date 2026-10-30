@@ -1,0 +1,24 @@
+{
+  "checkpoint_plies": 20,
+  "seed": 423,
+  "rating_bands": [
+    "Under 1200",
+    "1200-1599",
+    "1600-1999",
+    "2000+"
+  ],
+  "balanced_gap": 100,
+  "minimum_display_games": 50,
+  "features": [
+    "white_rating",
+    "black_rating",
+    "rating_gap",
+    "base_seconds",
+    "increment_seconds",
+    "speed",
+    "opening_family_20"
+  ],
+  "training_month": "2026-07",
+  "validation_month": "2026-08",
+  "test_month": "2026-09"
+}

@@ -1,0 +1,10 @@
+rule,before,after,excluded
+One source record per game ID; exact/conflicting duplicates audited separately,153817,153817,0
+Scope: rated standard blitz and rapid records,153817,91068,62749
+Valid UTC date and time,91068,91068,0
+Observed completed result,91068,91068,0
+Present ratings within broad plausibility interval 1-4000,91068,91068,0
+Nonmissing game/player IDs; distinct opponents,91068,91068,0
+Valid clock syntax and official Lichess speed boundaries,91068,91068,0
+Reached 20 observed plies; shorter games remain in exclusion accounting,91068,86997,4071
+Legal prefix with nonterminal board after Black's 10th move,86997,86950,47

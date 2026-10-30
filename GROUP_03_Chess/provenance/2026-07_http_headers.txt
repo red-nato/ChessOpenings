@@ -1,0 +1,11 @@
+HTTP/2 206 
+server: nginx
+date: Wed, 21 Oct 2026 16:48:39 GMT
+content-type: application/octet-stream
+content-length: 16777216
+last-modified: Sat, 01 Aug 2026 21:10:40 GMT
+etag: "6a6e60d0-6c393ca68"
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-frame-options: DENY
+content-range: bytes 0-16777215/29051046504
+

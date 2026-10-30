@@ -1,0 +1,56 @@
+{
+  "prepared_games": 86950,
+  "prepared_fingerprint": "a64532cce7bc8dab4ccdc89d96f70c6b6890b7f3d95b122ea362d91db7cd0796",
+  "split_counts": {
+    "train": 30615,
+    "validation": 25782,
+    "test": 30553
+  },
+  "sample_games": 21737,
+  "sampling_comparison": [
+    {
+      "measure": "White blitz points (%)",
+      "complete": 51.369863013698634,
+      "sample_25pct": 51.46251157050293,
+      "difference_pp": 0.09264855680429918
+    },
+    {
+      "measure": "White rapid points (%)",
+      "complete": 51.14119135858266,
+      "sample_25pct": 52.04266088214028,
+      "difference_pp": 0.9014695235576227
+    },
+    {
+      "measure": "Rapid game share (%)",
+      "complete": 25.4468085106383,
+      "sample_25pct": 25.449694070018865,
+      "difference_pp": 0.002885559380565894
+    },
+    {
+      "measure": "White rating 2000+ share (%)",
+      "complete": 12.366877515813686,
+      "sample_25pct": 12.366011869163177,
+      "difference_pp": -0.0008656466505083671
+    }
+  ],
+  "supported_close_rating_cells": 511,
+  "player_train_test_overlap": 3112,
+  "training_agenda_cells": 16,
+  "agenda_family_changes_from_C1": 0,
+  "final_prefix_family_disagreements": 311,
+  "management_summary_words": 161,
+  "model_fitted": false,
+  "test_set_pristine": false,
+  "seed": 423,
+  "largest_supported_change": {
+    "speed": "blitz",
+    "color": "black",
+    "rating_band": "Under 1200",
+    "opening_family_20": "King's Knight Opening",
+    "games_all": 84.0,
+    "score_pct_all": 47.023809523809526,
+    "games_close": 64.0,
+    "score_pct_close": 58.59375,
+    "change_pp": 11.569940476190474
+  }
+}

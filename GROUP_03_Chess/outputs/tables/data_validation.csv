@@ -1,0 +1,12 @@
+check,scope,failures,status,action
+Raw duplicated game IDs,raw,0,pass,Keep one ID only after inspecting duplicate payloads
+Conflicting payloads within duplicated IDs,raw,0,pass,Stop for investigation if any conflict exists
+Prepared game ID uniqueness,prepared,0,pass,Retained after uniqueness assertion
+Required identifiers missing,prepared,0,pass,Exclude missing IDs through visible preparation log
+Numeric ratings and plausible range,prepared,0,pass,Outside range flagged/excluded; valid extremes retained
+Allowed result and score mapping,prepared,0,pass,No missing outcome imputation
+Valid source timestamps,prepared,0,pass,No invented timestamps
+Observed month matches archive month,prepared,0,pass,Flag archive/date mismatch; actual UTC start governs split
+Legal 20-ply prefix and live board,prepared,0,pass,Only board information available at checkpoint used
+Unknown opening family,prepared,0,pass,Retain explicit Unclassified; report classification coverage
+Clock/category consistency,prepared,0,pass,Use documented Lichess thresholds; do not mix speed scales

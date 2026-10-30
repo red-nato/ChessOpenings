@@ -1,0 +1,17 @@
+speed,color,rating_band,opening_family_20_C1,opening_family_20_W2,games,score_pct,family_changed
+blitz,black,1200-1599,Queen's Pawn Game,Queen's Pawn Game,1991,46.88598694123556,False
+blitz,black,1600-1999,Sicilian Defense,Sicilian Defense,2811,47.705442902881536,False
+blitz,black,2000+,Sicilian Defense,Sicilian Defense,1206,47.2636815920398,False
+blitz,black,Under 1200,Queen's Pawn Game,Queen's Pawn Game,869,49.07940161104718,False
+blitz,white,1200-1599,Queen's Pawn Game,Queen's Pawn Game,1992,53.790160642570285,False
+blitz,white,1600-1999,Sicilian Defense,Sicilian Defense,2832,51.90677966101694,False
+blitz,white,2000+,Sicilian Defense,Sicilian Defense,1193,53.7300922045264,False
+blitz,white,Under 1200,Queen's Pawn Game,Queen's Pawn Game,870,49.42528735632184,False
+rapid,black,1200-1599,Queen's Pawn Game,Queen's Pawn Game,803,48.87920298879203,False
+rapid,black,1600-1999,Sicilian Defense,Sicilian Defense,767,51.62972620599739,False
+rapid,black,2000+,Sicilian Defense,Sicilian Defense,176,46.875,False
+rapid,black,Under 1200,Queen's Pawn Game,Queen's Pawn Game,460,41.30434782608695,False
+rapid,white,1200-1599,Queen's Pawn Game,Queen's Pawn Game,793,53.2156368221942,False
+rapid,white,1600-1999,Sicilian Defense,Sicilian Defense,795,48.36477987421384,False
+rapid,white,2000+,Sicilian Defense,Sicilian Defense,159,56.91823899371069,False
+rapid,white,Under 1200,Queen's Pawn Game,Queen's Pawn Game,462,55.952380952380956,False

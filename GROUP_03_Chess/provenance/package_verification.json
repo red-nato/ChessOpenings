@@ -1,0 +1,33 @@
+{
+  "source_checksums_verified": true,
+  "reference_checksums_verified": true,
+  "cohort_continuity": true,
+  "prepared_games": 86950,
+  "notebooks": [
+    {
+      "file": "C1_openings.ipynb",
+      "executed_cells": 14,
+      "saved_figures": 5,
+      "errors": 0
+    },
+    {
+      "file": "W2_project.ipynb",
+      "executed_cells": 19,
+      "saved_figures": 3,
+      "errors": 0
+    }
+  ],
+  "split_counts": {
+    "train": 30615,
+    "validation": 25782,
+    "test": 30553
+  },
+  "game_id_overlap": 0,
+  "chronological_order_verified": true,
+  "train_only_parameters_verified": true,
+  "management_summary_words": 161,
+  "report_pages": 16,
+  "model_fitted": false,
+  "test_set_pristine": false,
+  "delivery_scope": "local package; no slides or repository publication requested"
+}

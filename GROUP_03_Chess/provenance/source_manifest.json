@@ -1,0 +1,140 @@
+{
+  "retrieved_on": "2026-10-21",
+  "source": "https://database.lichess.org/#standard_games",
+  "license": "CC0-1.0",
+  "prefix_bytes_per_month": 16777216,
+  "selection": "All fully bounded PGN records in the first 16 MiB of each compressed monthly archive; the final record is discarded because the prefix does not certify its completeness.",
+  "warning": "These are three start-of-month UTC windows, not representative samples of full months. Compression size determines variable window length. Other speeds remain in the raw extract and are filtered visibly by the notebooks.",
+  "player_ids": "Deterministic SHA256 pseudonyms with a fixed project namespace; original public usernames are not copied into the reduced CSV. This is pseudonymisation, not a guarantee of anonymity.",
+  "months": [
+    {
+      "month": "2026-07",
+      "url": "https://database.lichess.org/standard/lichess_db_standard_rated_2026-07.pgn.zst",
+      "byte_range": [
+        0,
+        16777215
+      ],
+      "prefix_sha256": "ee4fff08e9e88cbcc0e650487310d1e70910c103d26b9cfa572bb1a41a50300f",
+      "complete_records": 51478,
+      "discarded_final_uncertified_record": 1,
+      "date_counts": {
+        "2026.07.01": 51478
+      },
+      "event_counts": {
+        "Rated Blitz game": 21043,
+        "Rated Rapid game": 7313,
+        "Rated Bullet game": 17684,
+        "Rated Blitz": 2761,
+        "Rated Classical game": 284,
+        "Rated Rapid": 886,
+        "Rated Bullet": 995,
+        "Blitz": 42,
+        "Classical": 6,
+        "Rated UltraBullet game": 167,
+        "Rated Classical": 98,
+        "Rapid": 51,
+        "Rated Correspondence game": 36,
+        "Rated UltraBullet": 112
+      },
+      "result_counts": {
+        "0-1": 24091,
+        "1-0": 25479,
+        "1/2-1/2": 1899,
+        "*": 9
+      },
+      "earliest_recorded_start": "2026.07.01 00:00:00",
+      "latest_recorded_start": "2026.07.01 00:43:20"
+    },
+    {
+      "month": "2026-08",
+      "url": "https://database.lichess.org/standard/lichess_db_standard_rated_2026-08.pgn.zst",
+      "byte_range": [
+        0,
+        16777215
+      ],
+      "prefix_sha256": "e35e203625af153d8a1a1b6ea9de5c33d94aa6ce5682350a8a8fc361676bcb96",
+      "complete_records": 51419,
+      "discarded_final_uncertified_record": 1,
+      "date_counts": {
+        "2026.08.01": 51419
+      },
+      "event_counts": {
+        "Rated Bullet": 9163,
+        "Rated Blitz game": 17992,
+        "Rated Bullet game": 14684,
+        "Rated Rapid game": 6500,
+        "Rated Classical game": 231,
+        "Rated Rapid": 553,
+        "Rated Blitz": 1809,
+        "Rated UltraBullet game": 170,
+        "Bullet": 33,
+        "Rapid": 74,
+        "Blitz": 94,
+        "Classical": 4,
+        "Rated Correspondence game": 48,
+        "Rated Classical": 24,
+        "Rated UltraBullet": 40
+      },
+      "result_counts": {
+        "0-1": 23865,
+        "1-0": 25637,
+        "1/2-1/2": 1913,
+        "*": 4
+      },
+      "earliest_recorded_start": "2026.08.01 00:00:00",
+      "latest_recorded_start": "2026.08.01 00:36:21"
+    },
+    {
+      "month": "2026-09",
+      "url": "https://database.lichess.org/standard/lichess_db_standard_rated_2026-09.pgn.zst",
+      "byte_range": [
+        0,
+        16777215
+      ],
+      "prefix_sha256": "5d1f99b2d9278d265c2fa39eeea7e26b57e1cdb96da997bf83518eded105743c",
+      "complete_records": 50920,
+      "discarded_final_uncertified_record": 1,
+      "date_counts": {
+        "2026.09.01": 50920
+      },
+      "event_counts": {
+        "Rated Bullet game": 17183,
+        "Rated Rapid game": 7424,
+        "Rated Blitz game": 20892,
+        "Rated Blitz": 2514,
+        "Rated Rapid": 819,
+        "Rated Bullet": 1078,
+        "Blitz": 184,
+        "Rated UltraBullet game": 299,
+        "Rated Classical game": 245,
+        "Rapid": 117,
+        "Classical": 6,
+        "Rated Correspondence game": 43,
+        "Rated UltraBullet": 116
+      },
+      "result_counts": {
+        "0-1": 23716,
+        "1-0": 25297,
+        "1/2-1/2": 1903,
+        "*": 4
+      },
+      "earliest_recorded_start": "2026.09.01 00:00:00",
+      "latest_recorded_start": "2026.09.01 00:40:14"
+    }
+  ],
+  "raw_extract_sha256": "d19cd830e3b3e48102388bd2808075c3dd7048da0cc7685de7617b0e74574d59",
+  "opening_reference": {
+    "repository": "https://github.com/lichess-org/chess-openings",
+    "commit": "a6189a30dc273ccb21fc2536a9a2fefd5592a67a",
+    "license": "CC0-1.0",
+    "files": {
+      "a.tsv": "3282e4c9155289a29224f9a85fba0decb46efa35c2fa5e39662d2ac48fb0f793",
+      "b.tsv": "1d5ed134ebbd87915ead5683416e37583bb3e5ae3582b4d8cb5cb4aa7ef4f623",
+      "c.tsv": "45e843c7b7e79a0d04d5bda879c9bd23f5a10974488bd8615e4f4c5d0749986f",
+      "d.tsv": "1cf4057a8aece94f27bb3f278ad410ee2844831a642364eeceaafa091dbcceda",
+      "e.tsv": "48c6f6645b031a5937c8386839debab0e2e48837251687ba1afb6369677f8546"
+    },
+    "known_at_prediction": "Fixed exogenous taxonomy, matched against positions observed within 20 plies only; not a table fitted on game outcomes.",
+    "version_limit": "Taxonomy retrieved in October 2026. Suitable for a retrospective case, but not a claim that this exact taxonomy was deployed in July 2026."
+  }
+}
