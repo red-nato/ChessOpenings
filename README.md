@@ -11,6 +11,8 @@
 
 Business Intelligence course project (IIB423T) · **Group 03**: Javier Alcaíno, Lucas Riquelme and Renato Varela
 
+Repository: [github.com/red-nato/ChessOpenings](https://github.com/red-nato/ChessOpenings) · W2 submission: tag `W2`
+
 </div>
 
 ---
@@ -45,7 +47,7 @@ KPI = (wins + 0.5 × draws) / eligible games     (in the specified cell)
 | **Predictive model** | None fitted. Neither C1 nor W2 requires one |
 
 <p align="center">
-  <img src="outputs/figures/C1_02_opening_exposure.png" alt="Most frequent opening families in blitz and rapid" width="85%">
+  <img src="GROUP_03_Chess/outputs/figures/C1_02_opening_exposure.png" alt="Most frequent opening families in blitz and rapid" width="85%">
   <br><sub>Most frequent opening families, by speed.</sub>
 </p>
 
@@ -73,10 +75,10 @@ flowchart LR
 
 | File | What it is |
 |---|---|
-| [`report/GROUP_03_C1_Report.pdf`](report/GROUP_03_C1_Report.pdf) | C1 report: methods, tables, figures, limitations |
-| [`notebooks/C1_openings.ipynb`](notebooks/C1_openings.ipynb) | Executed C1 analysis |
-| [`notebooks/W2_project.ipynb`](notebooks/W2_project.ipynb) | Executed W2 continuation |
-| [`GUIA_DE_LECTURA.md`](GUIA_DE_LECTURA.md) | Short Spanish reading guide |
+| [`GROUP_03_Chess/report/GROUP_03_C1_Report.pdf`](GROUP_03_Chess/report/GROUP_03_C1_Report.pdf) | C1 report: methods, tables, figures, limitations |
+| [`GROUP_03_Chess/notebooks/C1_openings.ipynb`](GROUP_03_Chess/notebooks/C1_openings.ipynb) | Executed C1 analysis |
+| [`GROUP_03_Chess/notebooks/W2_project.ipynb`](GROUP_03_Chess/notebooks/W2_project.ipynb) | Executed W2 continuation |
+| [`GROUP_03_Chess/GUIA_DE_LECTURA.md`](GROUP_03_Chess/GUIA_DE_LECTURA.md) | Short Spanish reading guide |
 
 ## 🗂️ Structure
 
@@ -95,6 +97,7 @@ GROUP_03_Chess/
 Python 3.12+ in a fresh virtual environment (exact versions in `provenance/environment_versions.json`).
 
 ```bash
+cd GROUP_03_Chess
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
