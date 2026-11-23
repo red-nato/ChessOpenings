@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="543.2755905511812" height="201" preserveAspectRatio="xMinYMin meet" viewBox="0 0 543 201" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+	<title>Opening families and White results | First draft</title>
+	<desc>Lichess · 1 Sep 2026, 00:00–00:40 UTC · White 2000+ · Blitz · 3,297 games</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="543.2755905511812" height="201"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-201)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="543.2755905511812" height="201" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="16" y="178" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px;fill: rgb(9%,16%,15%); stroke:none;" transform="translate(0,356) scale(1,-1)">Opening families and White results | First draft</text>
+			<text x="16" y="160" style="font-family: Helvetica, Arial, sans-serif; font-size: 9.3px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,320) scale(1,-1)">Lichess · 1 Sep 2026, 00:00–00:40 UTC · White 2000+ · Blitz · 3,297 games</text>
+			<g transform=" matrix(1,0,0,1,16,12)">
+				<rect x="145" y="119" width="8" height="7" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,43%); fill-rule: evenodd;"/>
+				<text x="158" y="118" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.7px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,236) scale(1,-1)">Win  1,736</text>
+				<rect x="260" y="119" width="8" height="7" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,49%); fill-rule: evenodd;"/>
+				<text x="273" y="118" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.7px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,236) scale(1,-1)">Draw  191</text>
+				<rect x="370" y="119" width="8" height="7" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,30%,19%); fill-rule: evenodd;"/>
+				<text x="383" y="118" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.7px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,236) scale(1,-1)">Loss  1,370</text>
+				<path d="M 145,28 L 145,111 Z" style="stroke: rgb(48%,54%,63%); stroke-linecap: butt; stroke-width: 0.65;"/>
+				<text x="142.637" y="16" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,32) scale(1,-1)">0</text>
+				<path d="M 219.25,28 L 219.25,111 Z" style="stroke: rgb(90%,92%,91%); stroke-linecap: butt; stroke-width: 0.65;"/>
+				<text x="212.161" y="16" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,32) scale(1,-1)">500</text>
+				<path d="M 293.5,28 L 293.5,111 Z" style="stroke: rgb(90%,92%,91%); stroke-linecap: butt; stroke-width: 0.65;"/>
+				<text x="282.8665" y="16" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,32) scale(1,-1)">1,000</text>
+				<path d="M 367.75,28 L 367.75,111 Z" style="stroke: rgb(90%,92%,91%); stroke-linecap: butt; stroke-width: 0.65;"/>
+				<text x="357.1165" y="16" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,32) scale(1,-1)">1,500</text>
+				<path d="M 442,28 L 442,111 Z" style="stroke: rgb(90%,92%,91%); stroke-linecap: butt; stroke-width: 0.65;"/>
+				<text x="431.3665" y="16" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,32) scale(1,-1)">2,000</text>
+				<text x="279.6411" y="3" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.6px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,6) scale(1,-1)">Games</text>
+				<text x="0" y="98.5" style="font-family: Helvetica, Arial, sans-serif; font-size: 9px;fill: rgb(9%,16%,15%); stroke:none;" transform="translate(0,197) scale(1,-1)">Caro-Kann Defense</text>
+				<rect x="145" y="97.5" width="17.67150000000001" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,43%); fill-rule: evenodd;"/>
+				<rect x="162.6715" y="97.5" width="2.524499999999989" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,49%); fill-rule: evenodd;"/>
+				<rect x="165.196" y="97.5" width="12.622500000000002" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,30%,19%); fill-rule: evenodd;"/>
+				<text x="182.8185" y="98.5" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,197) scale(1,-1)">221</text>
+				<text x="0" y="85.2" style="font-family: Helvetica, Arial, sans-serif; font-size: 9px;fill: rgb(9%,16%,15%); stroke:none;" transform="translate(0,170) scale(1,-1)">English Opening</text>
+				<rect x="145" y="84.2" width="16.186499999999995" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,43%); fill-rule: evenodd;"/>
+				<rect x="161.1865" y="84.2" width="0.7425000000000068" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,49%); fill-rule: evenodd;"/>
+				<rect x="161.929" y="84.2" width="8.761500000000012" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,30%,19%); fill-rule: evenodd;"/>
+				<text x="175.69050000000001" y="85.2" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,170) scale(1,-1)">173</text>
+				<text x="0" y="71.9" style="font-family: Helvetica, Arial, sans-serif; font-size: 9px;fill: rgb(9%,16%,15%); stroke:none;" transform="translate(0,143) scale(1,-1)">French Defense</text>
+				<rect x="145" y="70.9" width="18.11699999999999" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,43%); fill-rule: evenodd;"/>
+				<rect x="163.117" y="70.9" width="2.0790000000000077" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,49%); fill-rule: evenodd;"/>
+				<rect x="165.196" y="70.9" width="13.513499999999993" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,30%,19%); fill-rule: evenodd;"/>
+				<text x="183.7095" y="71.9" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,143) scale(1,-1)">227</text>
+				<text x="0" y="58.599999999999994" style="font-family: Helvetica, Arial, sans-serif; font-size: 9px;fill: rgb(9%,16%,15%); stroke:none;" transform="translate(0,117) scale(1,-1)">Queen's Pawn Game</text>
+				<rect x="145" y="57.599999999999994" width="19.305000000000007" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,43%); fill-rule: evenodd;"/>
+				<rect x="164.305" y="57.599999999999994" width="1.930499999999995" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,49%); fill-rule: evenodd;"/>
+				<rect x="166.2355" y="57.599999999999994" width="12.622500000000002" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,30%,19%); fill-rule: evenodd;"/>
+				<text x="183.858" y="58.599999999999994" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,117) scale(1,-1)">228</text>
+				<text x="0" y="45.3" style="font-family: Helvetica, Arial, sans-serif; font-size: 9px;fill: rgb(9%,16%,15%); stroke:none;" transform="translate(0,90) scale(1,-1)">Sicilian Defense</text>
+				<rect x="145" y="44.3" width="40.24349999999998" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,43%); fill-rule: evenodd;"/>
+				<rect x="185.24349999999998" y="44.3" width="4.4550000000000125" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,49%); fill-rule: evenodd;"/>
+				<rect x="189.6985" y="44.3" width="37.86750000000001" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,30%,19%); fill-rule: evenodd;"/>
+				<text x="232.566" y="45.3" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,90) scale(1,-1)">556</text>
+				<text x="0" y="32.0" style="font-family: Helvetica, Arial, sans-serif; font-size: 9px;fill: rgb(9%,16%,15%); stroke:none;" transform="translate(0,64) scale(1,-1)">Other (106 families)</text>
+				<rect x="145" y="31.0" width="146.27249999999998" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,43%); fill-rule: evenodd;"/>
+				<rect x="291.2725" y="31.0" width="16.632000000000005" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(39%,45%,49%); fill-rule: evenodd;"/>
+				<rect x="307.9045" y="31.0" width="118.0575" height="8.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,30%,19%); fill-rule: evenodd;"/>
+				<text x="430.962" y="32.0" style="font-family: Helvetica, Arial, sans-serif; font-size: 8.5px;fill: rgb(28%,36%,35%); stroke:none;" transform="translate(0,64) scale(1,-1)">1,892</text>
+			</g>
+		</g>
+	</g>
+</svg>

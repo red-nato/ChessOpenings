@@ -75,6 +75,7 @@ flowchart LR
 
 | File | What it is |
 |---|---|
+| [Workshop 3 report and editable charts](GROUP_03_Chess/workshop3/README.md) | Three related views linking the C2 clusters to a training segment and its opening outcomes |
 | [`GROUP_03_Chess/report/GROUP_03_C1_Report.pdf`](GROUP_03_Chess/report/GROUP_03_C1_Report.pdf) | C1 report: methods, tables, figures, limitations |
 | [`GROUP_03_Chess/notebooks/C1_openings.ipynb`](GROUP_03_Chess/notebooks/C1_openings.ipynb) | Executed C1 analysis |
 | [`GROUP_03_Chess/notebooks/W2_project.ipynb`](GROUP_03_Chess/notebooks/W2_project.ipynb) | Executed W2 continuation |
