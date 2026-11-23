@@ -124,4 +124,4 @@ No network access is needed. Everything uses project-relative paths and seed 423
 - **Data and privacy:** Lichess archives and the opening taxonomy are CC0. Player names are pseudonymised, which is not a guarantee of anonymity.
 - **Review status:** no instructor feedback or approval is claimed, and individual contributions in `TEAM_REVIEW.md` await each member's confirmation. AI assisted research, implementation and writing.
 
-Link presentación: https://claude.ai/design/p/eb912347-bc01-4f40-af18-c4808109e802?file=Opening+Outcomes+Deck.dc.html&via=share
+Link presentación: https://claude.ai/artifact/6sDrUtsrb9mskH5PqT3WdA#1
