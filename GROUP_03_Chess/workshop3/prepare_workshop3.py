@@ -24,7 +24,7 @@ def read_csv(path):
 
 def write_csv(filename, rows):
     with (DATA / filename).open("w", encoding="utf-8", newline="") as output:
-        writer = csv.DictWriter(output, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(output, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -120,6 +120,14 @@ def prepare():
         {"opening_family": name, **{outcome: counts[outcome] for outcome in OUTCOMES}, "games": counts.total()}
         for name, counts in sorted(opening_counts.items(), key=lambda pair: (-pair[1].total(), pair[0]))
     ]
+    featured = openings[:5]
+    remaining = openings[5:]
+    other = {
+        "opening_family": "Other", "families": len(remaining),
+        **{key: sum(row[key] for row in remaining) for key in (*OUTCOMES, "games")},
+    }
+    assert openings[0]["loss"] > max(row["loss"] for row in openings[1:])
+    opening_summary = [dict(row, families=1) for row in featured] + [other]
     windows = read_csv(TABLES / "C2_month_sensitivity.csv")
     context = {
         "first_test_utc": min(row["start_utc"] for row in games),
@@ -132,6 +140,7 @@ def prepare():
     write_csv("cluster_gaps.csv", clusters)
     write_csv("segment_gaps.csv", segments)
     write_csv("opening_outcomes.csv", openings)
+    write_csv("opening_chart_summary.csv", opening_summary)
     (DATA / "context.json").write_text(json.dumps(context, indent=2) + "\n", encoding="utf-8")
 
 

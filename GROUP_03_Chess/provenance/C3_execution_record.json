@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-24",
+  "execution": "Each notebook was checked with nbformat and executed top-to-bottom in a fresh Jupyter kernel using nbclient. C1 and W2 ran sequentially in a separate checkout with the original local inputs.",
+  "environment": {
+    "python": "3.14.7",
+    "python_packages": "../requirements.txt",
+    "poppler": "26.11.0"
+  },
+  "notebooks": [
+    {
+      "file": "C1_openings.ipynb",
+      "code_cells": 14,
+      "png_views": 5,
+      "error_outputs": 0,
+      "saved_outputs": "C3 execution"
+    },
+    {
+      "file": "W2_project.ipynb",
+      "code_cells": 20,
+      "png_views": 3,
+      "error_outputs": 0,
+      "saved_outputs": "C3 execution"
+    },
+    {
+      "file": "C2_clustering.ipynb",
+      "code_cells": 13,
+      "png_views": 4,
+      "error_outputs": 0,
+      "saved_outputs": "Original C2 execution used by the presentation",
+      "rerun": {
+        "original_selected_K": 4,
+        "original_selected_silhouette": 0.5191993918532297,
+        "rerun_selected_K": 4,
+        "rerun_selected_silhouette": 0.517616928255307,
+        "final_fit_cost_rounded": 136869.8,
+        "final_fit_gamma": 0.5,
+        "comparison": "Some July subsample fit costs and silhouettes differed. The full-fit September profiles, manual reference, window sensitivity and player sensitivity CSVs reproduced byte-for-byte."
+      }
+    },
+    {
+      "file": "C2_clustering_anexo_aperturas.ipynb",
+      "code_cells": 7,
+      "png_views": 2,
+      "error_outputs": 0,
+      "saved_outputs": "C3 execution"
+    },
+    {
+      "file": "C3_final_visualizations.ipynb",
+      "code_cells": 4,
+      "png_views": 3,
+      "error_outputs": 0,
+      "saved_outputs": "C3 execution"
+    }
+  ],
+  "input_verification": "The original raw-extract digest is recovered exactly by restoring CRLF line endings on the checkout's LF copy. C1 and W2 verify that digest, then read the local extract. Regenerated C1/W2 cohorts and splits match the frozen tracked inputs byte-for-byte in the verification checkout.",
+  "chart_verification": "The W3 preparation script rechecked all 16 manual color cells against the September split and reproduced the chart figures. The C3 rendered charts and the existing presentation were checked against those results.",
+  "base_commit": "d9b3e0bdbbc983a1c7c24d5e2c33ba9729f0e807"
+}

@@ -1,5 +1,7 @@
 # De C1 a C2: cómo pensar y defender este proyecto, explicado de a poco
 
+> Apuntes históricos de C2. Para la versión evaluada y las precisiones finales, consulta el [README de C3](../README.md) y el [registro de decisiones](DECISION_LOG.md).
+
 *Documento interno del equipo (Javier Alcaíno, Lucas Riquelme, Renato Varela). No es el brief del profesor ni el PDF de 3 páginas que exige el curso — es la explicación que nos preparamos a nosotros mismos, de lo más simple a lo más técnico, para poder defender el proyecto completo (C1 → W2 → C2) sin depender de IA durante la defensa oral.*
 
 > Documento completo. Las secciones 5 a 8 reflejan los números reales obtenidos al ejecutar `notebooks/C2_clustering.ipynb` — si vuelven a correr el notebook y los números cambian (por ejemplo, si cambian la semilla o los datos), hay que actualizar esta sección para que coincida, porque la rúbrica penaliza que los archivos entregados no concuerden entre sí.
