@@ -1,28 +1,28 @@
 # Workshop 3 · From player groups to opening review
 
-[Read the four-page report](W3_Opening_Review.pdf). It uses Group 03's C2 results to help a club training coordinator choose games for an opening-review session. Each comparison uses the same plotted values in both versions. The earlier drafts were created for W3.
+The [W3 report](W3_Opening_Review.pdf) preserves the submitted design comparisons.
+The [C3 closing notebook](../notebooks/C3_final_visualizations.ipynb) embeds the
+three final views with their denominators, supporting tables and interpretation.
 
-| View | Earlier draft | Final chart | Chart data |
-| --- | --- | --- | --- |
-| Score gap by cluster | [Paired bars](figures/01-clusters-before.svg) | [Paired dots](figures/01-clusters-after.svg) | [Cluster gaps and sample sizes](data/cluster_gaps.csv) |
-| Score gap by speed and rating | [Paired bars](figures/02-segments-before.svg) | [Aligned dots](figures/02-segments-after.svg) | [Segment gaps, rates and sample sizes](data/segment_gaps.csv) |
-| Opening families and White losses | [Stacked bars](figures/03-openings-before.svg) | [Ranked bars with losses at the baseline](figures/03-openings-after.svg) | [Exact outcomes for all 111 families](data/opening_outcomes.csv) |
+| View | Earlier draft | Final chart | Compact chart summary |
+|---|---|---|---|
+| Score gap by cluster | [Paired bars](figures/01-clusters-before.svg) | [Paired dots](figures/01-clusters-after.svg) | [Four cluster contrasts](data/cluster_gaps.csv) |
+| Score gap by speed and focal rating | [Paired bars](figures/02-segments-before.svg) | [Aligned dots](figures/02-segments-after.svg) | [Eight segment contrasts](data/segment_gaps.csv) |
+| Opening families and White losses | [Alphabetical stacked bars](figures/03-openings-before.svg) | [Ranked bars with losses at zero](figures/03-openings-after.svg) | [Five named families and Other](data/opening_chart_summary.csv) |
 
-## Edit or rebuild
+## Sources and choices
 
-Edit the labels and charts in the SVG files or revise the report text and figure definitions in [build_workshop3.py](build_workshop3.py). From this folder, with Python 3.12+ and ReportLab installed, run:
+- **View 1** compares the full September window and the subset where neither player appears in July. The [C2 notebook](../notebooks/C2_clustering.ipynb), §4.1 and §§6–7, shows the score complement, sensitivity and cluster composition.
+- **View 2** draws the score differences for the C2 reference rule (§4.2). The rating band belongs to each focal player, so each color can have different game IDs and denominators.
+- **View 3** counts unique White 2000+ Blitz games in the September window with families identified at ply 20. It selects five families by exposure and orders them by loss count. The final chart moves the aggregate of 106 remaining families to its note. The C3 table gives the full outcome breakdown for the six chart groups. The [decision record](../DECISION_LOG.md) explains the W3 feedback and why the team retained the ranking.
+- **Shared design** uses a signed pp scale with a marked zero on both gap charts. Shape and direct labels distinguish series. The game-count chart uses a zero baseline, fixed outcome order and printed counts. Plum identifies the review focus.
 
-```sh
-python3 build_workshop3.py
-```
+## Editable sources
 
-To add the student name to the cover, run `W3_AUTHOR="Full name" python3 build_workshop3.py`. The build uses the included `data/` folder. To refresh these inputs from the full project, run `python3 prepare_workshop3.py` first. It reads the saved C2 results and checks all 16 colour-specific speed/rating cells against the frozen September split. It counts unique games for White rated 2000+ in blitz and verifies the outcome totals against the corresponding cell.
-
-## Evidence
-
-These references point to files in the full C2 project.
-
-- **View 1.** The gap is White score rate minus Black score rate, in percentage points. The sensitivity subset includes games where neither player appears in the July training window. Every game contributes two colour perspectives. The [C2 notebook](../notebooks/C2_clustering.ipynb) and its [colour profiles](../outputs/tables/C2_cluster_profile_by_color_test.csv), [player sensitivity](../outputs/tables/C2_player_overlap_sensitivity.csv) and [window sensitivity](../outputs/tables/C2_month_sensitivity.csv) are the sources.
-- **View 2.** The comparison uses the [C2 club-rule table](../outputs/tables/C2_manual_rule_test.csv). The 2000+ Blitz segment had the largest absolute observed gap. The rating band is assigned separately to each focal colour, so White and Black may have different games and denominators.
-- **View 3.** The ranked bars use [September's frozen test split](../data/splits/test.csv) with opening family at 20 plies. Each record contributes once and is classified as a White win, draw or loss. The five families with the most games are drawn individually and ranked by losses; every bar starts with losses at zero. The remaining 106 families are summarised in a note and are available individually in the chart data. The before version draws all six groups with the same counts.
-- **Visual system.** Dark slate is the primary series and light slate the comparison series. Plum marks the item to act on next. Teal, grey and rust are reserved for win, draw and loss. Filled shapes are primary and open shapes are comparison series; circle and square are used only in View 1, triangle and diamond only in View 2.
+[build_workshop3.py](build_workshop3.py) defines the visual system and regenerates the
+SVGs and PDF with Python and ReportLab. Run `python3 build_workshop3.py` from this folder
+to render from the included chart summaries. The [preparation script](prepare_workshop3.py)
+uses locally held game inputs and saved C2 profiles to verify the September totals and
+refresh those summaries. It checks all 16 color-specific manual cells and verifies that
+Sicilian Defense leads all individual families by loss count. The assessed revision
+includes compact chart summaries and requires no data or software to read.

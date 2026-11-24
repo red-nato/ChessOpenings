@@ -373,29 +373,21 @@ def design_notes(pdf, top, design, review, left_width=270):
     pdf.showPage()
 
 
-def build():
+def read_chart_inputs():
     clusters = read_csv(DATA / "cluster_gaps.csv")
     segments = read_csv(DATA / "segment_gaps.csv")
-    raw_openings = read_csv(DATA / "opening_outcomes.csv")
+    raw_openings = read_csv(DATA / "opening_chart_summary.csv")
     context = json.loads((DATA / "context.json").read_text(encoding="utf-8"))
-    openings = [{"opening_family": row["opening_family"],
-                 **{key: int(row[key]) for key in (*OUTCOMES, "games")}} for row in raw_openings]
-    assert all(row["games"] == sum(row[o] for o in OUTCOMES) for row in openings)
-    breakdown = openings[:5] + [{
-        "opening_family": f"Other ({len(openings) - 5} families)", "families": len(openings) - 5,
-        **{key: sum(row[key] for row in openings[5:]) for key in (*OUTCOMES, "games")},
-    }]
-    assert len({row["opening_family"] for row in openings}) == len(openings)
-    sicilian = openings[0]
-    assert sicilian["opening_family"] == "Sicilian Defense" and sicilian["loss"] == max(row["loss"] for row in openings)
-    selected = max(segments, key=lambda row: abs(float(row["white_minus_black_pp"])))
-    assert (selected["speed"], selected["rating_band"]) == ("blitz", "2000+")
-    total = sum(row["games"] for row in openings)
-    assert total == int(selected["n_white"])
-    losses = sum(row["loss"] for row in openings)
-    win_points = sum(row["win"] + 0.5 * row["draw"] for row in openings)
-    assert abs(win_points / total - float(selected["white_score_rate"])) < 1e-12
+    breakdown = [{"opening_family": row["opening_family"],
+                  **{key: int(row[key]) for key in (*OUTCOMES, "games", "families")}}
+                 for row in raw_openings]
+    assert len(breakdown) == 6 and breakdown[-1]["opening_family"] == "Other"
+    assert all(row["games"] == sum(row[o] for o in OUTCOMES) for row in breakdown)
+    breakdown[-1]["opening_family"] = f"Other ({breakdown[-1]['families']} families)"
+    return clusters, segments, breakdown, context
 
+
+def comparison_rows(clusters, segments):
     cluster_rows = [
         (f"Cluster {row['cluster']}", f"{float(row['blitz_share']):.0%} blitz  /  mean rating {float(row['mean_rating']):,.0f}",
          float(row["full_gap_pp"]), float(row["unseen_gap_pp"]))
@@ -405,6 +397,23 @@ def build():
     for row in segments:
         by_band[row["rating_band"]][row["speed"]] = float(row["white_minus_black_pp"])
     segment_rows = [(rating, "", by_band[rating]["blitz"], by_band[rating]["rapid"]) for rating in BANDS]
+    return cluster_rows, segment_rows
+
+
+def build():
+    clusters, segments, breakdown, context = read_chart_inputs()
+    openings = breakdown[:-1]
+    sicilian = openings[0]
+    assert sicilian["opening_family"] == "Sicilian Defense" and sicilian["loss"] == max(row["loss"] for row in openings)
+    selected = max(segments, key=lambda row: abs(float(row["white_minus_black_pp"])))
+    assert (selected["speed"], selected["rating_band"]) == ("blitz", "2000+")
+    total = sum(row["games"] for row in breakdown)
+    assert total == int(selected["n_white"])
+    losses = sum(row["loss"] for row in breakdown)
+    win_points = sum(row["win"] + 0.5 * row["draw"] for row in breakdown)
+    assert abs(win_points / total - float(selected["white_score_rate"])) < 1e-12
+
+    cluster_rows, segment_rows = comparison_rows(clusters, segments)
     largest_cluster = max(cluster_rows, key=lambda row: abs(row[2]))[2]
     gap = float(selected["white_minus_black_pp"])
     (HERE / "figures").mkdir(exist_ok=True)

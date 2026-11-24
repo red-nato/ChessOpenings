@@ -1,127 +1,54 @@
-<div align="center">
+# Opening outcomes for training planning
 
-# ♟️ Opening Outcomes for Training Planning
+Business Intelligence · IIB423T-1 · C3 final assessment · Group 03
 
-**Which openings should a club review first, and how do they actually score by color, speed and rating band?**
+**Javier Alcaíno · Lucas Riquelme · Renato Varela**
 
-![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Notebooks-C1%20%2B%20W2-F37626?logo=jupyter&logoColor=white)
-![Data](https://img.shields.io/badge/Data-Lichess%202026%20(CC0)-2C7A4B)
-![Games](https://img.shields.io/badge/Eligible%20games-86%2C950-1F5F8B)
+**Question.** Which games should a chess club review first when training time is limited, and what does behavioral clustering add to a rule based on speed and rating?
 
-Business Intelligence course project (IIB423T) · **Group 03**: Javier Alcaíno, Lucas Riquelme and Renato Varela
+**Decision.** For a proposed club training coordinator, start with White's Sicilian Defense losses in 2000+ Blitz. The September window contains 255 losses in 556 Sicilian games (45.9%), compared with 1,370 in 3,297 games (41.6%) across that White cohort. The priority is exploratory and reflects the volume of reviewable games. K-prototypes summarizes four broad speed and rating profiles. The manual rule keeps the 2000+ Blitz segment visible.
 
-Repository: [github.com/red-nato/ChessOpenings](https://github.com/red-nato/ChessOpenings) · W2 submission: tag `W2`
+**Assessment version.** Use the commit at the tip of the `c3-final` branch for C3. Earlier course submissions form the development record. All assessed notebook outputs are saved and can be read on GitHub without installing software, downloading data or running code.
 
-</div>
+## Read in this order
 
----
+| Stage | File | What to look for |
+|---|---|---|
+| C1 · EDA | [Opening outcomes](GROUP_03_Chess/notebooks/C1_openings.ipynb) | Source scope, record grain, checkpoint, quality, preparation and opening exposure. |
+| W2 · Preparation and validation | [From EDA to validation](GROUP_03_Chess/notebooks/W2_project.ipynb) | Game-level chronological split, 25% stratified sensitivity sample, same-cohort check, leakage audit and July-only transformations. |
+| C2 · Model and reference | [Behavioral groups](GROUP_03_Chess/notebooks/C2_clustering.ipynb) | July-trained K-prototypes, K selection, September color-specific scores, speed-by-rating reference and sensitivity checks. |
+| W3/C3 · Views and recommendation | [Final views](GROUP_03_Chess/notebooks/C3_final_visualizations.ipynb) | Three saved charts, comparison and support tables, the opening-review decision and its limits. |
+| Optional · C2 annex | [Opening family profiles](GROUP_03_Chess/notebooks/C2_clustering_anexo_aperturas.ipynb) | A complementary July PCA/GMM analysis of family-level profiles. |
 
-## 📖 Background
+- [C3 presentation PDF](GROUP_03_Chess/Presentaci%C3%B3n%20de%20ajedrez%20animada.pdf) · [Animated presentation](https://claude.ai/artifact/6sDrUtsrb9mskH5PqT3WdA#1)
+- [W3 designs, editable SVGs and chart-generation scripts](GROUP_03_Chess/workshop3/README.md)
+- [Decision and traceability record](GROUP_03_Chess/DECISION_LOG.md) · [Team contributions and AI use](GROUP_03_Chess/TEAM_REVIEW.md)
+- [Guía de lectura en español](GROUP_03_Chess/GUIA_DE_LECTURA.md)
 
-This project started as an analysis of how resources are spent in public and subsidized private schools in La Cisterna, Chile. Because of the nature of the course, which needs a decision, a measurable KPI and observed data that can continue into prediction and a dashboard, the team moved to a new case. After a brief feasibility check of other public datasets (including Valorant), it settled on **chess openings**. The earlier school work is preserved in its original folder and repository and is not relabelled as chess work.
+## Scope and pipeline
 
-## 🎯 Question and KPI
+The earlier W1 case concerned education spending in La Cisterna. The team subsequently adopted a training-planning question using public chess games. The C1 tracking reconstruction starts the chess evidence chain, and W2, C2 and W3 carry its question and score measure forward.
 
-A **club training coordinator** (a proposed user, not a validated one) needs to prioritise opening-review material. The analysis compares exposure and observed results **within color, speed and focal-player rating band**.
+**Source → EDA → frozen split → model and reference → review material.** The source consists of the first 16 MiB of each compressed July, August and September 2026 standard-rated Lichess archive, downloaded on 21 October 2026. The last uncertified record in each prefix was discarded. C1 retained 86,950 of 153,817 source records (64,824 Blitz and 22,126 Rapid), grouped into 140 opening families. Both the [Lichess archives](https://database.lichess.org/#standard_games) and the [opening taxonomy at a6189a3](https://github.com/lichess-org/chess-openings/tree/a6189a3) are CC0. The [source manifest](GROUP_03_Chess/provenance/source_manifest.json) records exact byte ranges, input hashes and window coverage.
 
-```text
-KPI = (wins + 0.5 × draws) / eligible games     (in the specified cell)
-```
+Each game contributes one opening label from its shared sequence through ply 20, immediately after Black's tenth turn. The prefix contains moves by both sides. Each side keeps its own rating and outcome. W2 splits the game IDs before C2 derives linked player-game perspectives. The annex uses one row per opening family. The final White opening view counts each selected game once.
 
-> [!IMPORTANT]
-> The KPI is descriptive. It is **not** a causal effect, a predictive accuracy, or a measure of training effectiveness. Scores are always read together with their denominators.
+| UTC source window | Game count | Role |
+|---|---:|---|
+| July | 30,615 | Estimate preprocessing parameters, select K and fit the prototypes. |
+| August | 25,782 | Apply the frozen model for a window sensitivity check. |
+| September | 30,553 | Compare frozen cluster assignments and manual segments, then explore review priorities. |
 
-- One row is **one unique game**; a game is never split across train and evaluation sets.
-- The opening is identified from the **first 20 plies** (right after Black's 10th move). Full-game opening tags, winners, post-game rating changes and termination are excluded from predictors.
+**Score rate** is (wins + 0.5 × draws) divided by the count for the stated color and group. The manual rule's largest observed contrast is +4.62 percentage points in 2000+ Blitz (White 55.55%, n = 3,297, and Black 50.93%, n = 3,288). The largest of four cluster contrasts is +2.87 pp. Across all contrasts, the support-weighted absolute gaps are 2.47 pp for the eight manual segments and 2.44 pp for the clusters. Each color can contain a different mix of games.
 
-## 📊 At a glance
+September was already explored in C1. The roughly 36–43 minute windows cover particular UTC periods and may include the same players. Neither the observed gaps nor the volume of losses measures the effect of color, opening choice or a training intervention.
 
-| | |
-|---|---|
-| **Source** | Official Lichess standard-rated archives: July, August and September 2026 |
-| **Eligible games** | 86,950 unique games (64,824 blitz · 22,126 rapid) |
-| **Opening families** | 140 (most frequent: Sicilian Defense, 9,255 games) |
-| **Chronological split** | July train (30,615) · August validation (25,782) · September test (30,553) |
-| **W2 sample** | Fixed-seed 25% stratified sample (21,737 games, seed 423) |
-| **Predictive model** | None fitted. Neither C1 nor W2 requires one |
+## Software and files
 
-<p align="center">
-  <img src="GROUP_03_Chess/outputs/figures/C1_02_opening_exposure.png" alt="Most frequent opening families in blitz and rapid" width="85%">
-  <br><sub>Most frequent opening families, by speed.</sub>
-</p>
+The work uses Python and Jupyter with pandas and NumPy for preparation, python-chess for prefix matching, scikit-learn and SciPy for transformations and evaluation, kmodes for K-prototypes, Matplotlib and Seaborn for analytical plots, and ReportLab for the W3 visual system. The C3 notebook rasterizes those same drawings with Poppler for saved PNG display. [Python dependencies](GROUP_03_Chess/requirements.txt) and the [execution record](GROUP_03_Chess/provenance/C3_execution_record.json) document the environment.
 
-```mermaid
-flowchart LR
-    A["Lichess archives<br/>Jul · Aug · Sep 2026"] --> B["Prepared cohort<br/>86,950 games"]
-    B --> C["Opening family<br/>first 20 plies"]
-    C --> D["KPI by color, speed<br/>and rating band"]
-    B --> E["Chronological splits<br/>train-only scaler"]
-```
+`notebooks/` contains code and rendered evidence. `outputs/` holds figures and aggregate results. `workshop3/` holds the shared drawing code, SVGs and compact chart summaries. `provenance/` records source identity and preparation settings. `report/` and the C2 slides are historical context.
 
-**W2 adds:** data-quality checks, a reproducible 25% sample, a close-rating comparison (opponents within 100 points), a leakage audit, and real chronological subsets with a scaler and encoder learned from July only.
+The C3 revision excludes local dataset inputs and row-level exports, including PGN prefixes, raw and prepared games, taxonomy TSVs, split membership and feature arrays. Earlier commits retain the archives used in prior course submissions. See the assessment version above.
 
-## 🗃️ Data provenance
-
-| | |
-|---|---|
-| **Games** | [Lichess open database](https://database.lichess.org/#standard_games), standard rated games, CC0. Months: 2026-07, 2026-08, 2026-09 (retrieved 2026-10-21) |
-| **What was taken** | Exactly the first 16 MiB of each compressed monthly archive (HTTP byte range); the last, possibly cut, record of each prefix was discarded |
-| **Opening taxonomy** | [lichess-org/chess-openings](https://github.com/lichess-org/chess-openings), CC0, frozen at commit `a6189a3` |
-| **Files** | `data/source_prefixes/` (unchanged downloads) → `data/raw/` (reduced extract) → `data/processed/` (cohort) → `data/splits/` |
-| **Rebuild** | `python scripts/acquire_data.py --local-only` recreates the extract from the supplied prefixes. Hashes and response headers are in `provenance/` |
-
-## 🧭 Open these first
-
-| File | What it is |
-|---|---|
-| [Workshop 3 report and editable charts](GROUP_03_Chess/workshop3/README.md) | Three related views linking the C2 clusters to a training segment and its opening outcomes |
-| [`GROUP_03_Chess/report/GROUP_03_C1_Report.pdf`](GROUP_03_Chess/report/GROUP_03_C1_Report.pdf) | C1 report: methods, tables, figures, limitations |
-| [`GROUP_03_Chess/notebooks/C1_openings.ipynb`](GROUP_03_Chess/notebooks/C1_openings.ipynb) | Executed C1 analysis |
-| [`GROUP_03_Chess/notebooks/W2_project.ipynb`](GROUP_03_Chess/notebooks/W2_project.ipynb) | Executed W2 continuation |
-| [`GROUP_03_Chess/GUIA_DE_LECTURA.md`](GROUP_03_Chess/GUIA_DE_LECTURA.md) | Short Spanish reading guide |
-
-## 🗂️ Structure
-
-```text
-GROUP_03_Chess/
-├── report/        # C1 report (PDF)
-├── notebooks/     # C1_openings.ipynb · W2_project.ipynb
-├── scripts/       # data acquisition, notebook execution, report build, verification
-├── data/          # source prefixes, raw extract, opening taxonomy, processed cohort, splits
-├── outputs/       # exported tables and figures
-└── provenance/    # sources, hashes, frozen contract, execution records
-```
-
-## 🚀 Run it
-
-Python 3.12+ in a fresh virtual environment (exact versions in `provenance/environment_versions.json`).
-
-```bash
-cd GROUP_03_Chess
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-Open the notebooks in Jupyter or VS Code, select that environment and run every cell top to bottom (**C1 first, W2 second**). Or run both automatically:
-
-```bash
-python scripts/execute_notebooks.py
-python scripts/verify_package.py   # optional integrity check
-```
-
-No network access is needed. Everything uses project-relative paths and seed 423.
-
-## ⚠️ Limits
-
-> [!WARNING]
-> The data are **three short UTC windows at the start of each month**, not random samples and not full months. All claims are limited accordingly.
-
-- **Test set is not pristine:** September was already explored in C1, and no test-based tuning is done.
-- **Repeated players:** 3,112 players appear in both train and test, so this design does not show generalisation to unseen players.
-- **Operational choices:** rating bands, the 100-point close-opponent restriction and the 50-game display threshold are transparent choices, not causal identification.
-- **Data and privacy:** Lichess archives and the opening taxonomy are CC0. Player names are pseudonymised, which is not a guarantee of anonymity.
-- **Review status:** no instructor feedback or approval is claimed, and individual contributions in `TEAM_REVIEW.md` await each member's confirmation. AI assisted research, implementation and writing.
-
-Link presentación: https://claude.ai/artifact/6sDrUtsrb9mskH5PqT3WdA#1
+AI assisted research, code, writing and review across the project. See the [team review](GROUP_03_Chess/TEAM_REVIEW.md) for the recorded tools, uses and member contributions.
